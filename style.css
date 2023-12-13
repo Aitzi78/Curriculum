@@ -1,0 +1,435 @@
+body {
+    font-family: 'Arial', sans-serif;
+  
+    margin: 0;
+    padding: 0;
+    color: #6d6a6a;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: url('imagenes/esferas.jpg') ;
+        
+    color: #464545;
+    text-align: center;
+    padding: 2em;
+  }
+
+
+  
+  .nombre,
+  .frases
+   {
+   
+    margin-left: 50px;
+  }
+
+  
+
+  .foto {
+    flex: 1; /* Toma el espacio restante disponible */
+    max-width: 100%;
+  
+   
+    
+
+  }
+
+  .nombre,
+  .frases {
+    flex: 2; 
+    /* Toma el doble del espacio que toman los vacíos */
+  }
+
+  .foto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+  }
+  .nombre-persona {
+    color:gray; /* Color para el nombre */
+}
+
+.full-stack {
+    color: #5d5f5d; /* Color para "Full Stack" */
+}
+
+.junior {
+    color: #aaaaad; /* Color para "Jr" */
+}
+h3 {
+  color: rgb(107, 107, 110);
+}
+
+h4 {
+  color: rgb(82, 80, 80);
+}
+main {
+  display: flex;
+}
+
+.Izq {
+  
+  flex: 1; /* Ajustamos la propiedad flex para permitir que Izq crezca o disminuya según sea necesario */
+  max-width: 20%; /* Establecemos el ancho máximo del contenedor Izq al 30% */
+}
+
+.Aptitudes,
+.Lenguajes,
+.centro,
+.Experiencia {
+ 
+  margin: 5px;
+  padding: 10px;
+}
+.tecnicas {
+        font-family: 'Arial', sans-serif;
+    }
+
+    .tecnicas strong {
+        color: #f9f5f7; /* Color del texto normal (rosa) */
+        text-shadow: 0 0 10px #ff66b2, 0 0 20px #ff66b2, 0 0 30px #ff66b2; /* Efecto de sombra neon rosa para el texto fuerte (strong) */
+    }
+    .interpersonales strong {
+      color: #f9f5f7; /* Color del texto normal (rosa) */
+      text-shadow: 0 0 10px #ff66b2, 0 0 20px #ff66b2, 0 0 30px #ff66b2; /* Efecto de sombra neon rosa para el texto fuerte (strong) */
+  }
+  
+
+
+
+.interpersonales {
+  width: 70%;
+}
+
+.centro {
+  flex: 2; /* Establecemos el contenedor central para ocupar el doble de espacio en comparación con Izq */
+  max-width: 40%; /* Establecemos el ancho máximo del contenedor central al 70% */
+}
+.Lenguajes {
+  display: flex;
+  text-align: center; /* Centrar el contenido dentro de Lenguajes */
+  text-align: center;
+  align-items: center;
+  
+}
+.Lenguajes .titulo {
+  margin-bottom: 10px;
+
+}
+
+.lenguaj {
+  color: #464545;
+}
+
+
+
+.Lenguajes img {
+ 
+  width: 50px; /* Establece el ancho deseado para todas las imágenes dentro de Lenguajes */
+  height: 50px; /* Establece la altura deseada para todas las imágenes dentro de Lenguajes */
+  border: 1px solid rgb(111, 108, 108); /* Añade un borde para visualización */
+  margin: 3px; /* Añade un margen para separar las imágenes dentro de Lenguajes */
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+
+.Formacion {
+  background-color: #f1f1f3;
+  color:rgb(126, 123, 123);
+  width: 28%;
+  position: relative;
+  text-align: center;
+  padding: 2px;
+}
+
+
+.Formacion h2 {
+  margin-bottom: 20px;
+}
+
+.Formacion::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 6px solid #5d5b5c; /* Puedes ajustar el color aquí (en formato hexadecimal, RGB, etc.) */
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0.7;
+  filter: blur(5px); /* Puedes ajustar el valor del desenfoque según tus preferencias */
+}
+.Bootcamp {
+  background-color: #ebebef;
+  width: 60%;
+}
+
+.Bootcamp h2 {
+  color:black; /* Color para h2 en Bootcamp */
+  font-family: 'Arial', sans-serif; /* Tipo de letra para h2 en Bootcamp */
+}
+
+.Bootcamp h4 {
+  color: grey; /* Color para h4 en Bootcamp */
+  font-family:'Courier New', monospace ; /* Tipo de letra para h4 en Bootcamp */
+  
+}
+.Multimedia {
+  background-color: #fbfbfe;
+  width: 60%;
+}
+
+.Multimedia h2 {
+  color:black; /* Color para h2 en Multimedia */
+  font-family: 'Arial', sans-serif;/* Tipo de letra para h2 en Multimedia */
+}
+
+.Multimedia h4 {
+  color:grey; /* Color para h4 en Multimedia */
+  font-family: 'Courier New', monospace; /* Tipo de letra para h4 en Multimedia */
+}
+
+.Drones h2 {
+  color:black; /* Color para h2 en Drones */
+  font-family:'Arial', sans-serif; /* Tipo de letra para h2 en Drones */
+}
+
+.Drones h4 {
+  color:grey; /* Color para h4 en Drones */
+  font-family: 'Courier New', monospace; /* Tipo de letra para h4 en Drones */
+}
+
+.Escaparatismo h2 {
+  color:black; /* Color para h2 en Escaparatismo */
+  font-family: 'Arial', sans-serif; /* Tipo de letra para h2 en Escaparatismo */
+}
+
+.Escaparatismo h4 {
+  color:grey; /* Color para h4 en Escaparatismo */
+  font-family: 'Courier New', monospace; /* Tipo de letra para h4 en Escaparatismo */
+}
+
+.Piloto h2 {
+  color:black; /* Color para h2 en Piloto */
+  font-family:'Arial', sans-serif; /* Tipo de letra para h2 en Piloto */
+}
+
+.Piloto h4 {
+  color:grey; /* Color para h4 en Piloto */
+  font-family: 'Courier New', monospace; /* Tipo de letra para h4 en Piloto */
+}
+.Direccion {
+  
+  padding: 10px;
+  
+ 
+}
+
+.Aptitudes {
+  
+  padding: 10px;
+  margin-top: 10px; /* Añade un margen superior para separar los contenedores */
+}
+
+.Lenguajes {
+ 
+  padding: 10px;
+  margin-top: 10px; /* Añade un margen superior para separar los contenedores */
+  color:gray;
+  
+ 
+}
+
+.Dcha{
+  flex: 1; /* Ajustamos la propiedad flex para permitir que Izq crezca o disminuya según sea necesario */
+  max-width: 40%; 
+  margin-top: 8px;
+  padding-left: 20px;
+  
+  
+}
+.Experiencia {
+  background-color: #f1f1f3;
+  color:rgb(126, 123, 123);
+  width: 35%;
+  position: relative;
+  text-align: center;
+  padding: 2px;
+}
+
+.Experiencia h2 {
+  margin-bottom: 30px;
+}
+
+.Experiencia::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 6px solid #ee1f9c; /* Puedes ajustar el color aquí (en formato hexadecimal, RGB, etc.) */
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0.7;
+  filter: blur(5px); /* Puedes ajustar el valor del desenfoque según tus preferencias */
+}
+.fechas h2 {
+  color:black; /* Color para h2 en Bootcamp */
+  font-family: 'Arial', sans-serif; /* Tipo de letra para h2 en Bootcamp */
+}
+
+.fechas h4 {
+  color: grey; /* Color para h4 en Bootcamp */
+  font-family:'Courier New', monospace ; /* Tipo de letra para h4 en Bootcamp */
+  
+}
+.fechas h3 {
+  
+    color:black; /* Color para h2 en Bootcamp */
+    font-family: 'Arial', sans-serif; /* Tipo de letra para h2 en Bootcamp */
+}
+  
+.fechas li {
+    color: rgb(66, 64, 64); /* Color para h4 en Bootcamp */
+    font-family:'Courier New', monospace
+}
+.Ingumak {
+    background-color: #fbfbfe;
+    width: 60%;
+}
+.elCorte {
+    background-color: #ebebef;
+    width: 60%;
+}
+.freelance {
+    background-color: #d2d2d7;
+    width: 60%;
+}
+.Programas {
+    display: flex;
+    text-align: center; /* Centrar el contenido dentro de Lenguajes */
+    margin: 5px;
+    padding: 10px;
+}       
+       
+.Programas img {
+   
+    width: 50px; /* Establece el ancho deseado para todas las imágenes dentro de Lenguajes */
+    height: 50px; /* Establece la altura deseada para todas las imágenes dentro de Lenguajes */
+    border: 1px solid rgb(111, 108, 108);
+    border-radius: 5px; /* Añade un borde para visualización */
+    margin: 1px; /* Añade un margen para separar las imágenes dentro de Lenguajes */
+    margin-top: 15px;
+   
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 40px;
+}
+
+.idiomas {
+  background-color: #eeeef1;
+  width: 50%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.idioma {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espaciado entre los idiomas */
+}
+
+.idioma div {
+  text-align: center;
+}
+.idiomas::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 6px solid #ee1f9c; /* Puedes ajustar el color aquí (en formato hexadecimal, RGB, etc.) */
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0.7;
+  filter: blur(5px); /* Puedes ajustar el valor del desenfoque según tus preferencias */
+}
+.Euskera h3 {
+  color:black; /* Color para h2 en Escaparatismo */
+  font-family: 'Arial', sans-serif; /* Tipo de letra para h2 en Escaparatismo */
+}
+
+.Euskera h4 {
+  color:grey; /* Color para h4 en Escaparatismo */
+  font-family: 'Courier New', monospace; /* Tipo de letra para h4 en Escaparatismo */
+}
+.Ingles h3 {
+  color:black; /* Color para h2 en Escaparatismo */
+  font-family: 'Arial', sans-serif; /* Tipo de letra para h2 en Escaparatismo */
+}
+
+.Ingles h4 {
+  color:grey; /* Color para h4 en Escaparatismo */
+  font-family: 'Courier New', monospace; /* Tipo de letra para h4 en Escaparatismo */
+}
+.Frances h3 {
+  color:black; /* Color para h2 en Escaparatismo */
+  font-family: 'Arial', sans-serif; /* Tipo de letra para h2 en Escaparatismo */
+}
+
+.Frances h4 {
+  color:grey; /* Color para h4 en Escaparatismo */
+  font-family: 'Courier New', monospace; /* Tipo de letra para h4 en Escaparatismo */
+}
+.Datos {
+ 
+  width: 15%;
+  height: 100px;
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: 300px;
+  border-radius: 10px; /* Ajusta según tus preferencias */
+  overflow: hidden; 
+  
+  
+}
+.Datos::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 6px solid #5d5b5c; /* Puedes ajustar el color aquí (en formato hexadecimal, RGB, etc.) */
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0.7;
+  filter: blur(5px); 
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espaciado entre los idiomas */
+}
+.foot {
+  width: 100%;
+  height: 90px;
+  background: url('imagenes/esferas.jpg') ;
+}
+
+
+
